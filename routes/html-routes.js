@@ -15,10 +15,10 @@ const router = require("express").Router()
         res.sendFile(path.join(__dirname, "../public/stats.html"));
       });
   
-    // If no matching route is found default to home
-    router.get("*", function(req, res) {
-      res.sendFile(path.join(__dirname, "../public/index.html"));
-    });
+    // // If no matching route is found default to home
+    // router.get("*", function(req, res) {
+    //   res.sendFile(path.join(__dirname, "../public/index.html"));
+    // });
 
     module.exports = router;
  
