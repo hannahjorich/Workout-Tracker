@@ -36,24 +36,9 @@ router.get("/api/workouts", (req, res) => {
 });
 
 router.get("/api/workouts/range", (req, res) => {
-  console.log("hi jay");
     Workout.find({}).limit(7)
       .then(dbWorkout => {
         console.log(dbWorkout);
-        res.json(dbWorkout);
-      })
-      .catch(err => {
-        res.status(400).json(err);
-      });
-  });
-
-  router.delete("/api/workouts/:id", ({ body, params }, res) => {
-    Workout.findByIdAndUpdate(
-        params.id, 
-        { $push: {exercises: body}},
-        { new: true, runValidators: true}
-    )
-      .then(dbWorkout => {
         res.json(dbWorkout);
       })
       .catch(err => {
