@@ -18,6 +18,12 @@ The following animation demonstrates the application functionality:
 
 ![home](https://github.com/hannahjorich/Workout-Tracker/blob/main/assets/FITNESS.gif)
 
+## Links
+
+https://github.com/hannahjorich/Workout-Tracker
+https://workout-tracker-jorich.herokuapp.com/
+
+
 ## Resources 
 
 Node JS, Express, Mongo, Mongoose
